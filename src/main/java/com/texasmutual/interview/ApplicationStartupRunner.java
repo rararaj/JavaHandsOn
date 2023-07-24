@@ -23,6 +23,8 @@ public class ApplicationStartupRunner implements CommandLineRunner {
 	        User user = new User();
 	        user.setName(name);
 	        user.setEmail(name + "@chucknorris.com");
+	        user.setContact(true);
+	        user.setPhoneNumber("1234567890");
 	        userRepository.save(user);
 	    };
 
